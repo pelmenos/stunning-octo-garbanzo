@@ -1,5 +1,12 @@
+choices = ['Привет', 'Пока']
+
+
 def get_user_input():
-    pass
+    while True:
+            res = input()
+            if res not in choices:
+                print("Неправильный ввод")
+            return res
 
 
 def show_info():
