@@ -1,3 +1,6 @@
+import datetime
+
+
 def get_user_input():
     pass
 
@@ -11,7 +14,8 @@ def processed_result(result):
 
 
 def save_result(result):
-    pass
+    with open("history.txt", mode='a', encoding='utf-8') as f:
+        f.write(f"{datetime.datetime.now()}:{result}")
 
 
 if __name__ == '__main__':
