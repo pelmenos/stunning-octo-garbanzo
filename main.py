@@ -1,9 +1,12 @@
+choices = ['Привет', 'Пока']
+
+
 def get_user_input():
     pass
 
 
 def show_info():
-    pass
+    print(f"Введите {', '.join(choices)}:")
 
 
 def processed_result(result):
