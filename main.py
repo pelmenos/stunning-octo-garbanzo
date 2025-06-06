@@ -7,7 +7,12 @@ def show_info():
 
 
 def processed_result(result):
-    pass
+    match result:
+        case "Пока":
+            print("До свидания!")
+        case "Привет":
+            print("Здравствуйте!")
+    return
 
 
 def save_result(result):
